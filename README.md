@@ -1,4 +1,4 @@
 # EuroConverter
-This is a Euro Converter 
-Test Version Released. Enjoy it.
-Now Added euro to rubles.
+Optimized program, now takes less time to do all the actions.
+Beta version 0.2.0
+Enjoy.
