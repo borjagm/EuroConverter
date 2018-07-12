@@ -6,6 +6,7 @@ public class Main {
 	private double pound = 0.89;
 	private double dolar = 1.17;
 	private double yen = 131.33;
+	private double ruble = 72.54;
 	private Scanner keyboard = new Scanner(System.in);
 
 	Main() {
@@ -14,7 +15,7 @@ public class Main {
 
 	private void converter() {
 		double eur;
-		double result;
+		double total;
 		int num;
 		String resp;
 		
@@ -26,19 +27,24 @@ public class Main {
 			System.out.println("1.  Eur. to pound");
 			System.out.println("2.  Eur. to dolar.");
 			System.out.println("3.  Eur. to yen.");
+			System.out.println("4.  Eur. to ruble.");
 			num = keyboard.nextInt();
 
 			if (num == 1) {
-				result = eur * pound;
-				System.out.println(eur + " Euros are " + result + " Pounds.");
+				total = eur * pound;
+				System.out.println(eur + " Euros are " + total + " Pounds.");
 
 			} else if (num == 2) {
-				result = eur * dolar;
-				System.out.println(eur + " Euros are " + result + " Dolars.");
+				total = eur * dolar;
+				System.out.println(eur + " Euros are " + total + " Dolars.");
 
 			} else if (num == 3) {
-				result = eur * yen;
-				System.out.println(eur + " Euros are " + result + " Yen.");
+				total = eur * yen;
+				System.out.println(eur + " Euros are " + total + " Yen.");
+			}
+			else if (num==4){
+				total = eur * ruble;
+				System.out.println(eur + " Euros are " + total + " Rubles.");
 			}
 			System.out.println("Do you wanna convert more? (Yes/No)");
 			resp = keyboard.next();
