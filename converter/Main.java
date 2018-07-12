@@ -18,7 +18,7 @@ public class Main {
 		double total;
 		int num;
 		String resp;
-		
+
 		do {
 			System.out.println("Put euros to convert.");
 			eur = keyboard.nextDouble();
@@ -30,25 +30,29 @@ public class Main {
 			System.out.println("4.  Eur. to ruble.");
 			num = keyboard.nextInt();
 
-			if (num == 1) {
+			switch (num) {
+			case 1:
 				total = eur * pound;
 				System.out.println(eur + " Euros are " + total + " Pounds.");
-
-			} else if (num == 2) {
+				break;
+			case 2:
 				total = eur * dolar;
 				System.out.println(eur + " Euros are " + total + " Dolars.");
-
-			} else if (num == 3) {
+				break;
+			case 3:
 				total = eur * yen;
 				System.out.println(eur + " Euros are " + total + " Yen.");
-			}
-			else if (num==4){
+				break;
+			case 4:
 				total = eur * ruble;
 				System.out.println(eur + " Euros are " + total + " Rubles.");
+				break;
+
 			}
+
 			System.out.println("Do you wanna convert more? (Yes/No)");
 			resp = keyboard.next();
-			
+
 		} while (!resp.equalsIgnoreCase("no"));
 	}
 
